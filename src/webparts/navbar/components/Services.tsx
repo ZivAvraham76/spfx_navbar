@@ -48,9 +48,9 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <div className="relative inline-block text-left h-full" ref={dropdownRef}>
-      <button onClick={toggleDropdown} className="text-[#000000] font-semibold">
-        <h4>Services</h4>
+    <div ref={dropdownRef}>
+      <button onClick={toggleDropdown}>
+        <h4  className= "justify-start text-zinc-900 text-base font-normal font-Poppins">Services</h4>
       </button>
 
       {isOpen && (

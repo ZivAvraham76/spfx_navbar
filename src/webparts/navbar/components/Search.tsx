@@ -12,7 +12,7 @@ const Search: React.FC = () => {
   };
 
   return (
-    <form className="relative w-[624px] h-[33px] border-2 border-[#000000] rounded-full flex items-center" onSubmit={handleSubmit}>
+    <form className="relative w-[331px] h-[38px] px-4 py-3 bg-white rounded-[81.08px] outline outline-1 outline-offset-[-1.08px] outline-zinc-400 inline-flex justify-start items-center overflow-hidden" onSubmit={handleSubmit}>
       <div className="absolute inset-y-0 left-3 flex items-center">
         <svg
           className="w-3 h-3 text-[#000000]"

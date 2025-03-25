@@ -8,7 +8,10 @@ const LeftNav: React.FC = () => {
         className="w-[30px] h-[30px]"
         alt="Logo"
       />
-      <h2 className="text-[#000000] text-sm font-semibold">Training Portal</h2>
+      <div className='flex flex-col'>
+      <div className="justify-start text-zinc-900 text-xs font-normal font-DIN_OT">CHECK POINT</div>
+      <div className="justify-start text-black text-xs font-bold font-DIN_OT">LEARNING & TRAINING</div>
+      </div>
     </div>
   );
 };

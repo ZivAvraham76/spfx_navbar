@@ -5,14 +5,18 @@ import LeftNav from './LeftNav';
 import Search from './Search';
 import Services from './Services';
 import MyLearning from './MyLearning';
+import Acronyms from './Acronyms';
 
 const Navbar: React.FC<INavbarProps> = (props) => {
+
   return (
-    <div className="flex items-center justify-between w-full px-8 py-3 bg-white gap-4">
+    <div className="flex items-center justify-start [1217px] h-24 bg-white shadow-[0px_4px_20px_-10px_rgba(0,0,0,0.25) px-8 py-3 bg-white gap-[24px]">
         <LeftNav />
-      <Search />
+        <Search />
         <Services />
         <MyLearning />
+        <Acronyms />
+      
       </div>
   );
 };

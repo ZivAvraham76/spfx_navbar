@@ -3,7 +3,7 @@ import * as React from 'react';
 const MyLearning: React.FC = () => {
     return(
         <div>
-            <h4 className="text-[#000000] font-semibold">
+            <h4 className="justify-start text-zinc-900 text-base font-normal font-Poppins">
                 My Learning
             </h4>
         </div>
