@@ -37,10 +37,11 @@ const Acronyms: React.FC = () => {
   };
 
   const getInitials = (fullName: string) => {
-    const nameParts = fullName.split('  ');
-    const firstNameInitial = nameParts[0]?.charAt(0).toUpperCase();
-    const lastNameInitial = nameParts[1]?.charAt(0).toUpperCase();
-
+    const nameParts = fullName.trim().split(/\s+/); // Splits by one or more spaces
+ 
+    const firstNameInitial = nameParts[0]?.charAt(0).toUpperCase() || '';
+    const lastNameInitial = nameParts.length > 1 ? nameParts[nameParts.length - 1].charAt(0).toUpperCase() : '';
+ 
     return `${firstNameInitial}${lastNameInitial}`;
   };
 

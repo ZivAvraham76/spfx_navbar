@@ -10,7 +10,7 @@ import Acronyms from './Acronyms';
 const Navbar: React.FC<INavbarProps> = (props) => {
 
   return (
-    <div className="flex items-center justify-start [1217px] h-24 bg-white shadow-[0px_4px_20px_-10px_rgba(0,0,0,0.25) px-8 py-3 bg-white gap-[24px]">
+    <div className="flex items-center justify-start [1217px] h-24 bg-white shadow-custom-shadow px-8 py-3 bg-white gap-[24px]">
         <LeftNav />
         <Search />
         <Services />

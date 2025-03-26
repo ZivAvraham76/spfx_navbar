@@ -33,7 +33,7 @@ const Search: React.FC = () => {
       <input
         type="text"
         id="simple-search"
-        className="bg-white rounded-full text-[#000000] text-sm pl-10 pr-4 focus:outline-none focus:bg-white"
+        className="bg-white rounded-full text-[#000000] text-sm pl-[30px] focus:outline-none focus:bg-white"
         placeholder="Search training"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
