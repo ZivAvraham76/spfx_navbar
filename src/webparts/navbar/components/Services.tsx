@@ -8,7 +8,7 @@ const Services: React.FC = () => {
     setIsOpen((prev) => !prev);
   };
 
-  const handleOutsideClick = (event: MouseEvent) => {
+  const handleOutsideClick = (event: MouseEvent): void => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
       setIsOpen(false);
     }

@@ -3,7 +3,7 @@ import * as React from 'react';
 const Search: React.FC = () => {
   const [query, setQuery] = React.useState('');
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = (event: React.FormEvent): void => {
     event.preventDefault();
     if (query.trim()) {
       const searchUrl = `https://cptraining.litmoseu.com/home/library?SearchTerm=${encodeURIComponent(query)}`;
